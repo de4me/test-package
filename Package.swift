@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "FLAC",
     platforms: [
-        .macOS(.v10_13)
+        .macOS( .v10_13 )
     ],
     products: [
         .library(
@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FLAC",
-            url: "https://github.com/de4me/test-package/blob/macos10_9/FLAC.zip",
-            checksum: "745fa1b9a36fbad90b521ee9da6e57ea19acdae1988f6b333c8c0d77ad23c757")
+            url: "https://github.com/de4me/test-package/releases/download/2.0/FLAC.xcframework.zip",
+            checksum: "26cc8b40e283ba363001b151d4aee850991162df9162c2f446e0b1818126a44b")
     ]
 )
