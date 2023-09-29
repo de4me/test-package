@@ -17,6 +17,6 @@ let package = Package(
         .binaryTarget(
             name: "FLAC",
             url: "https://github.com/de4me/test-package/blob/main/FLAC.zip",
-            checksum: "0f928e570b40541e4368e1f0745678e8c6ce1088375f6e8fab88981ca5675589")
+            checksum: "265ce97f17d58d8232cc9bbb90d0704b9d417fddb3fbdf09ec1b2f8db5f37d1a")
     ]
 )
