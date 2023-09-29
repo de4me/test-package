@@ -16,6 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FLAC",
-            path: "Packages/FLAC.xcframework")
+            url: "https://github.com/de4me/test-package/blob/macos10_9/FLAC.zip",
+            checksum: "f52d521ea6b518028d5a20bd904a39e9b85be22e030f891ae24dc330a58f4a96")
     ]
 )
