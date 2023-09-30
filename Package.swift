@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "FLAC",
     platforms: [
-        .macOS( .v10_13 )
+        .macOS("10.9")
     ],
     products: [
         .library(
@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FLAC",
-            url: "https://github.com/de4me/test-package/releases/download/2.0/FLAC.xcframework.zip",
-            checksum: "26cc8b40e283ba363001b151d4aee850991162df9162c2f446e0b1818126a44b")
+            url: "https://github.com/de4me/test-package/releases/download/2.1/FLAC.zip",
+            checksum: "580ed61786082d53090231b2589e6a261b80da05488dd1bbe933bcb668fb4ef1")
     ]
 )
