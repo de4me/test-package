@@ -1,6 +1,6 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-// 1.2.2.2
+// 1.2.2.4
 
 import PackageDescription
 
@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FLAC",
-            url: "https://github.com/de4me/test-package/releases/download/1.2/FLAC.zip",
-            checksum: "7fbd26c0caf0ff3975566003b4a1f4a26932f1d49bdc2a80bd17aea2694701e8")
+            url: "https://github.com/de4me/test-package/releases/download/1.2.2.4/FLAC.zip",
+            checksum: "997e49de93be1cfef81d23ff829c6cbfbacf6d8467b7bb174a871ffcc43db64d")
     ]
 )
