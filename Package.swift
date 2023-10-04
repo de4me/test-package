@@ -1,23 +1,23 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-// 1.2.4
+// 1.2.4.1
 
 import PackageDescription
 
 let package = Package(
-    name: "mpg123",
+    name: "FLAC",
     platforms: [
         .macOS(.v10_13), .iOS(.v12)
     ],
     products: [
         .library(
-            name: "mpg123",
-            targets: ["mpg123"]),
+            name: "FLAC",
+            targets: ["FLAC"]),
     ],
     targets: [
         .binaryTarget(
-            name: "mpg123",
-            url: "https://github.com/de4me/test-package/releases/download/1.2.4/mpg123.zip",
-            checksum: "687df44aedce4f56f2d798ded1bec8045a42c8d4d882cac90015eeafd917f37b")
+            name: "FLAC",
+            url: "https://github.com/de4me/test-package/releases/download/1.2.4.1/FLAC.zip",
+            checksum: "997e49de93be1cfef81d23ff829c6cbfbacf6d8467b7bb174a871ffcc43db64d")
     ]
 )
