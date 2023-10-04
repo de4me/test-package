@@ -5,19 +5,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "ogg",
+    name: "SDL",
     platforms: [
-        .macOS(.v10_13), .iOS(.v12)
+        .macOS(.v10_13)
     ],
     products: [
         .library(
-            name: "ogg",
-            targets: ["ogg"]),
+            name: "SDL",
+            targets: ["SDL"]),
     ],
     targets: [
         .binaryTarget(
-            name: "ogg",
-            url: "https://github.com/de4me/test-package/releases/download/1.2.7-rc.2/ogg.zip",
-            checksum: "91888a5ca27f400ddd829b43d13d8352041e9f76e7c5b97ee0ee4112bf8af1c1")
+            name: "SDL",
+            url: "https://github.com/de4me/test-package/releases/download/1.2.7.3/SDL.zip",
+            checksum: "f984d50fc307b507df3d861bf4f798a300dc638efde3e8646a9b5798280bc67c")
     ]
 )
