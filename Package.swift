@@ -16,7 +16,7 @@ let package = Package(
             targets: ["vorbis"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/de4me/ogg-package/releases/download/1.3.5/ogg.zip", from: "1.3.5")
+        .package(url: "https://github.com/de4me/ogg-package.git", from: "1.3.5")
     ],
     targets: [
         .binaryTarget(
