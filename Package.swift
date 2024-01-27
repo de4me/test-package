@@ -19,6 +19,7 @@ let package = Package(
         .package(url: "https://github.com/de4me/ogg-package.git", from: "1.3.5")
     ],
     targets: [
+        .target(name: "ogg", dependencies: ["ogg"]),
         .binaryTarget(
             name: "vorbis",
             url: "https://github.com/de4me/test-package/releases/download/1.2.7.5/vorbis.zip",
