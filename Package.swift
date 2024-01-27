@@ -14,15 +14,18 @@ let package = Package(
         .library(
             name: "vorbis",
             targets: ["vorbis"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/de4me/ogg-package.git", from: "1.3.5")
+        .library(
+            name: "ogg",
+            targets: ["ogg"]),
     ],
     targets: [
-        .target(name: "ogg", dependencies: ["ogg"]),
         .binaryTarget(
             name: "vorbis",
             url: "https://github.com/de4me/test-package/releases/download/1.2.7.5/vorbis.zip",
-            checksum: "457d73f45f3b057fb055cb63592a8981fbf7b404cc10f92ba25e0bb87241811b")
+            checksum: "457d73f45f3b057fb055cb63592a8981fbf7b404cc10f92ba25e0bb87241811b"),
+        .binaryTarget(
+            name: "ogg",
+            url: "https://github.com/de4me/test-package/releases/download/1.2.7.5/ogg.zip",
+            checksum: "063f53ff5f20c8302a97638b8606eea2fe8868921678ba97f20db4e114142497")
     ]
 )
