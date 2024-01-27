@@ -5,19 +5,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SDL",
+    name: "vorbis",
     platforms: [
-        .macOS(.v10_13)
+        .macOS(.v10_13),
+        .iOS(.v12)
     ],
     products: [
         .library(
-            name: "SDL",
-            targets: ["SDL"]),
+            name: "vorbis",
+            targets: ["vorbis"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/de4me/ogg-package/releases/download/1.3.5/ogg.zip", from: "1.3.5")
     ],
     targets: [
         .binaryTarget(
-            name: "SDL",
-            url: "https://github.com/de4me/test-package/releases/download/1.2.7.4/SDL.zip",
-            checksum: "f984d50fc307b507df3d861bf4f798a300dc638efde3e8646a9b5798280bc67c")
+            name: "vorbis",
+            url: "https://github.com/de4me/test-package/releases/download/1.2.7.5/vorbis.zip",
+            checksum: "457d73f45f3b057fb055cb63592a8981fbf7b404cc10f92ba25e0bb87241811b")
     ]
 )
